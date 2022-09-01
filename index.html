@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel = "icon" href = "assets/image/logo_sports.png" type = "image/x-icon">
+        <title>Sports Center Web</title>
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+                <h1>Sports Center</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="btn"><a href="#home">Home</a></li>
+                    <li class="btn"><a href="#sports">Sports</a></li>
+                    <li class="btn"><a href="#news">News</a></li>
+                    <div class="subnav">
+                        <div class="subnavbtn" onclick="change()"><a href="#league">League</a>
+                            <div class="subnav-content" id="dropdown">
+                                <a href="#premier">Premier League</a>
+                                <a href="#seriea">Seria A League</a>
+                                <a href="#laliga">Laliga</a>
+                            </div>
+                        </div>    
+                    </div>
+                    <li class="btn"><a href="#player">Players</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <div id="content">
+                <article id="home" class="card">
+                    <h2>Home</h2>
+                    <div class="home">    
+                        <img src="assets/image/logo_sports.png" class="image_home" alt="sports" title="sports">                    
+                        <p>The official site that provides the latest information about sports</p>
+                    </div>
+                </article>
+                
+                <article id="sports" class="card">
+                    <h2>Sports</h2>
+                    <div class="list sports">
+                        <img src="assets/image/logo_basketball.png" class="images" alt="basketball" title="basketball">
+                        <img src="assets/image/logo_sepakbola.jpeg" class="images" alt="football" title="football">
+                        <img src="assets/image/logo_volleyball.png" class="images" alt="volleyball" title="volleyball">
+                        <img src="assets/image/logo_tennis.jpeg" class="images" alt="tenis" title="tenis">
+                        <p>Various types of sports</p>
+                    </div>    
+                </article>
+        
+                <article id="news" class="card">
+                    <h2>News</h2>
+                    <p>You can read the latest news from every sports field</p>
+                    
+                    <section>
+                            <h3 id="news1"></h3>
+                            <h4>The Deshaun Watson settlement shows the NFL has made progress with sexual misconduct accusations. Will anything change?</h4>
+                            <img src="assets/image/news1.jpg" class="featured-images" alt="news1" title="news1">
+                            <p>(CNN)Over a decade ago, Ben Roethlisberger was accused of sexually assaulting a college student in Georgia -- a case that sent shudders through the NFL world.
+                                Roethlisberger, the starting quarterback for the Pittsburgh Steelers at the time, was beloved by fans -- having led the Steelers to two Super Bowl championships.
+                                Though Roethlisberger was never charged with any crimes, he was given a six-game suspension by the league for violating its personal conduct policy. (Roethlisberger's lawyer denied the sexual assault allegation, and the quarterback apologized in a statement to the team and fans for letting them down). Later, the suspension was reduced to four games for good behavior.
+                            </p><p><a href="https://edition.cnn.com/2022/08/27/sport/deshaun-watson-nfl-violence-sexual-misconduct-cec/index.html">Continue reading</a></p>
+                    </section>
+                    
+                    <section>
+                        
+                            <h3 id="news2"></h3>
+                            <h4>Duke volleyball player Rachel Richardson's father says his daughter was 'afraid' after being subjected to racial slurs</h4>
+                            <img src="assets/image/news2.jpg" class="featured-images" alt="news2" title="news2">
+                            <p>(CNN)The father of Duke women's volleyball player Rachel Richardson says his daughter was "afraid" and phoned him in tears after being subjected to racist abuse during a match against Brigham Young University on Friday.
+                                Richardson, who is Black, is a sophomore outside hitter for Duke. She tweeted a statement Sunday explaining she was not the only player who was the target of the racist slurs and heckling at BYU's Smith Fieldhouse in Provo, Utah.</p>
+                            <p><a href="https://edition.cnn.com/2022/08/29/sport/rachel-richardson-father-says-daughter-was-afraid-spt-intl/index.html">Continue reading</a></p>
+                    </section>
+
+                    <section>
+                            <h3 id="news3"></h3>
+                            <h4>Karim Benzema scores late brace to hand Real Madrid thrilling win as Espanyol forced to play defender in goal</h4>
+                            <img src="assets/image/news3.jpg" class="featured-images" alt="news3" title="news3">
+                
+                        <p>(CNN)Karim Benzema scored two late goals as Real Madrid beat against Espanyol on Sunday to maintain its perfect start to the La Liga season.
+
+                            The game looked to be heading towards a draw after Vinícius Jr.'s opener was canceled out by Joselu in the first-half, but Benzema was on hand to settle the tie in a thrilling finale.
+                            The Frenchman volleyed in Rodrygo's cross at the back post to give his side the lead in the 88th minute before settling the match with a free-kick in the 10th minute of added time.</p>
+                            <p><a href="https://edition.cnn.com/2022/08/29/sport/rachel-richardson-father-says-daughter-was-afraid-spt-intl/index.html">Continue reading</a></p>
+                    </section>
+                </article>
+
+                <article id="league" class="card">
+                    <h2>League</h2>
+                    <p>You can see the ranking table of the leagues in each sports field live</p>
+                    <section>
+                        <h3 id="league1"></h3>
+                        <h4>Football League</h4>
+                        
+                            <div class="subcard">
+                                <a href="https://www.google.com/search?sxsrf=ALiCzsbJRAC9uhn-yGrFQdm6_aTTXAnpRg:1661854055910&q=premier+league+table&sa=X&ved=2ahUKEwji1K7lqO75AhUs-jgGHZhEAtEQ7xYoAHoECAEQPA&biw=1536&bih=722&dpr=1.25">
+                                <p id="premier">Premier League</p>
+                                </a>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>No</td>
+                                                <td  >Club</td>
+                                                <td>Play</td>
+                                                <td>Win</td>
+                                                <td>Lose</td>
+                                                <td>Draw</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td  >Arsenal</td>
+                                                <td>4</td>
+                                                <td>4</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td  >Man City</td>
+                                                <td>4</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td  >Tottenham</td>
+                                                <td>4</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td  >Brighton</td>
+                                                <td>4</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td  >Leeds</td>
+                                                <td>4</td>
+                                                <td>2</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="subcard">
+                                    <a href="https://www.google.com/search?q=serie+a+table&biw=1536&bih=722&sxsrf=ALiCzsa1DzU-bydRbUb7x16rT3E_qkaN-A%3A1661879662514&ei=bkUOY_byHv2Z3LUPgJalgAY&oq=seria+table&gs_lcp=Cgdnd3Mtd2l6EAMYADIHCCMQsQIQJzIHCC4QChDLATIECAAQCjIECAAQQzIECAAQQzIECAAQCjIICAAQHhAHEAoyBAgAEAoyBAgAEAoyBAgAEAo6BwgAEEcQsAM6BwgAELADEEM6DAguEMgDELADEEMYAToGCAAQHhAHOgQIABANOgUIABCABEoECEEYAEoECEYYAVCqDVjKE2D-HmgBcAF4AIABnwGIAaAEkgEDMi4zmAEAoAEByAEUwAEB2gEGCAEQARgI&sclient=gws-wiz">
+                                    <p id="seriea">Serie A League</p>
+                                    </a>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>No</td>
+                                                    <td>Club</td>
+                                                    <td>Play</td>
+                                                    <td>Win</td>
+                                                    <td>Lose</td>
+                                                    <td>Draw</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Milan</td>
+                                                    <td>4</td>
+                                                    <td>2</td>
+                                                    <td>2</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Napoli</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Lazio</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Atalanta</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Torino</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                        
+                                <div class="subcard">
+                                    <a href="https://www.google.com/search?q=laliga+table&biw=1536&bih=722&sxsrf=ALiCzsbae2BKb2Yw9DUyhYoDV-qAtICgIw%3A1661879827631&ei=E0YOY6iXJvuRz7sPxd2RqAE&ved=0ahUKEwjo7KPmiO_5AhX7yHMBHcVuBBUQ4dUDCA0&uact=5&oq=laliga+table&gs_lcp=Cgdnd3Mtd2l6EAMyCwgAEIAEELEDEIMBMgUIABCABDIHCAAQChDLATIHCAAQgAQQCjIFCAAQywEyBwgAEIAEEAoyBQgAEIAEMgUIABDLATIGCAAQHhAHMgYIABAeEAc6BwgAEEcQsAM6BwgAELADEEM6DAguEMgDELADEEMYAToECAAQCjoLCC4QxwEQrwEQywE6CAgAEB4QDxAHOggIABAeEAcQCjoECAAQDToHCCMQsAIQJ0oECEEYAEoECEYYAVCcEVjYGmDbH2gBcAF4AIABkQGIAYQFkgEDMi40mAEAoAEByAEUwAEB2gEGCAEQARgI&sclient=gws-wiz">
+                                    <p id="laliga">Laliga</p>
+                                    </a>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>No</td>
+                                                    <td>Club</td>
+                                                    <td>Play</td>
+                                                    <td>Win</td>
+                                                    <td>Lose</td>
+                                                    <td>Draw</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Madrid</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td>o</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Betis</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Barcelona</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Bilbao</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Villareal</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                    </section>
+                </article>
+
+                <article id="player" class="card">
+                    <h2>Players</h2>
+                    <p>These are examples of well-known sports players in their respective fields</p>
+                    <div class="subcard_player">
+                        <h4>Football Player</h4>
+                        <img id="imgp1" src="assets/image/football_palyer.jpeg" class="sport_image" alt="football_player" title="football player">
+                        <p id="pp1">Cristiano Ronaldo dos Santos Aveiro was born on 5 February 1985. He is a Portuguese professional footballer who plays as a forward for English Premier League club Manchester United and captains the Portugal national team.</p>
+                        <button id="cp1" onclick="changePlayersFootball()">Change Player</button>
+                    </div>
+
+                    <div class="subcard_player">
+                        <h4>Volleyball Player</h4>
+                        <img id="imgp2" src="assets/image/Volleyball_player.jpeg" class="sport_image" alt="football_player" title="football player">
+                        <p id="pp2">Earvin N'Gapeth (born 12 February 1991) is a French volleyball player, member of the France national volleyball team and Iranian club Paykan Tehran VC, 2015 European Champion, gold medallist of the World League (2015 and 2017), French Champion (2010), Italian Champion (2016) and Olympic Champion (2020).</p>
+                        <button id="cp2" onclick="changePlayersVolleyball()">Change Player</button>
+                    </div>
+                    
+                    <div class="subcard_player">
+                        <h4>Tennis Player</h4>
+                        <img id="imgp3" src="assets/image/tennis_player.jpeg" class="sport_image" alt="football_player" title="football player">
+                        <p id="pp3">Rafael "Rafa" Nadal Parera (born 3 June 1986) is a professional tennis player from Manacor, Mallorca, Spain. After being ranked number two in the world for 158 weeks, on August 18, 2008 he became the world's first ranked player to replace Roger Federer. The ranking lasted until July 6, 2009 when Federer won Wimbledon and was again world number one.</p>
+                        <button id="cp3" onclick="changePlayersTennis()">Change Player</button>
+                    </div>
+
+                    <div class="subcard_player">
+                        <h4>Basketball Player</h4>
+                        <img id="imgp4" src="assets/image/basket_player.jpeg" class="sport_image" alt="football_player" title="football player">
+                        <p id="pp4">Michael Jeffrey Jordan (born February 17, 1963) is an American professional basketball player. He is a world famous player in the sport. At least, six times won the NBA championship with the Chicago Bulls (1991-1993, 1996-1998). He has a height of 198 cm and won the best player title.</p>
+                        <button id="cp4" onclick="changePlayersBasketball()">Change Player</button>
+                    </div>
+                </article>
+
+            </div>
+    
+            <aside class="card">
+                <article class="profile">  
+                   <header>
+                        <h2>About Me</h2>
+                        <p>Wildan Mukholad Fauzi</p>
+                        <figure>
+                            <img src="assets/image/Foto_wildan.jpg" alt="Foto_wildan">
+                            <br>
+                            <q>start everything with bismillah and end with alhamdulillah</q>
+                        </figure>
+                   </header>
+                   <section>
+                       <h3>More information</h3>
+                       <table>
+                           <tr>
+                                <th>Nationality</th>
+                                <td>:</td>
+                                <td>Indonesia</td>
+                           </tr>
+                           <tr>
+                               <th>Hobby</th>
+                               <td>:</td>
+                               <td>Play Games</td>
+                           </tr>
+                           <tr>
+                               <th>Language</th>
+                               <td>:</td>
+                               <td>Indonesia, Sunda, English</td>
+                           </tr>
+                       </table>
+                   </section>
+                </article>
+            </aside>
+        </main>
+    
+        <footer>
+            <p>Submission Belajar Dasar Pemrograman Web &#169; 2022 - Dicoding Indonesia</p>
+        </footer>
+    <script src="assets/sports.js"></script>            
+    </body>
+</html>
